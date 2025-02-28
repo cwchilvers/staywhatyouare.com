@@ -78,9 +78,11 @@ main {
     width: 120px;
 }
 
-
-
 hr {
     transform: scaleX(1.1) scaleY(2.4);
     color: white;
+}
+
+.shake {
+    cursor: pointer;
 }
