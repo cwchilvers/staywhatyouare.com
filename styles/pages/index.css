@@ -116,36 +116,51 @@ body {
 
 #logo {
     height: 80px;
-    filter: drop-shadow(2px 2px 20px rgba(47, 0, 255, 0.644));
+    filter: drop-shadow(2px 2px 50px rgba(47, 0, 255, 0.452));
     opacity: 0;
-    animation: fadeInBlur 1.5s ease-out forwards;
+    animation: fadeInLogo 1.5s ease-out forwards;
+    animation-delay: 0.2s;
 }
 
 #enter {
     height: 40px;
-    filter: blur(10px) drop-shadow(2px 2px 20px rgba(47, 0, 255, 0.644));
+    filter: blur(15px) drop-shadow(2px 2px 50px rgba(255, 255, 255, 0.788));
     opacity: 0;
-    animation: fadeInBlur 1.5s ease-out forwards;
+    animation: fadeInEnter 1.5s ease-in forwards;
     animation-delay: 1s;
     cursor: pointer;
 }
 
 #enter:hover {
-    filter: blur(10px) drop-shadow(2px 2px 20px rgb(255, 255, 255));
+    filter: blur(10px) drop-shadow(2px 2px 50px rgba(255, 255, 255, 0.788));
 }
 
 
 
-@keyframes fadeInBlur {
+@keyframes fadeInLogo {
     0% {
         opacity: 0;
-        filter: blur(10px) drop-shadow(2px 2px 30px rgba(47, 0, 255, 0.514));
-        transform: scaleX(1.1) scaleY(0.9);
+        filter: blur(15px) drop-shadow(2px 2px 50px rgba(47, 0, 255, 0.452));
+        transform: scaleX(1.05) scaleY(0.95);
     }
 
     100% {
         opacity: 1;
-        filter: blur(0px) drop-shadow(2px 2px 40px rgba(47, 0, 255, 0.377));
+        filter: blur(0.5px) drop-shadow(2px 2px 50px rgba(47, 0, 255, 0.452));
+        transform: scaleX(1) scaleY(1);
+    }
+}
+
+@keyframes fadeInEnter {
+    0% {
+        opacity: 0;
+        filter: blur(15px) drop-shadow(2px 2px 50px rgba(255, 255, 255, 0.788));
+        transform: scaleX(1.05) scaleY(0.95);
+    }
+
+    100% {
+        opacity: 1;
+        filter: blur(0.5px) drop-shadow(2px 2px 50px rgba(255, 255, 255, 0.788));
         transform: scaleX(1) scaleY(1);
     }
 }
