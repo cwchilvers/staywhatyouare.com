@@ -141,3 +141,13 @@ body {
         transform: scaleX(1) scaleY(1);
     }
 }
+
+@media (max-width: 768px) {
+    #logo {
+        width: 80vw;
+    }
+
+    #enter {
+        width: 50vw;
+    }
+}
