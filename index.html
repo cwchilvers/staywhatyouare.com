@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="./assets/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>stay what you are</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/pages/index.css">
+</head>
+
+<body>
+    <!-- Background Stuff -->
+    <div id="rotating"></div>
+    <img src="./assets/images/bg_circuit.jpeg" id="circuit-overlay"></img>
+    <video id="oscilloscope-overlay" autoplay loop muted>
+        <source src="./assets/videos/oscilloscope.mp4" type="video/mp4">
+    </video>
+    <div id="blue-overlay"></div>
+    <canvas id="stars"></canvas>
+    <div id="black-overlay"></div>
+    <video id="crt-overlay" autoplay loop muted>
+        <source src="./assets/videos/crt.mp4" type="video/mp4">
+    </video>
+
+    <!-- Main Content -->
+    <div id="container">
+        <img id="logo" src="./assets/images/logo.svg">
+        <img id="enter" src="./assets/images/enter.svg">
+    </div>
+
+    <!-- Foreground Stuff -->
+    <video id="glitch-overlay" autoplay loop muted>
+        <source src="./assets/videos/glitch.mp4" type="video/mp4">
+    </video>
+
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/gsap.min.js"></script>
+<script src="./scripts/rotate.js"></script>
+<script src="./scripts/stars.js"></script>
+<script src="./blur.js"></script>
+
+</html>
