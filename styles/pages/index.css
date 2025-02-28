@@ -38,7 +38,7 @@ body {
     width: 100vw;
     height: 100vh;
     background: rgb(0, 0, 255);
-    mix-blend-mode: color-burn;
+    mix-blend-mode: multiply;
     overflow: hidden;
 }
 
@@ -48,10 +48,10 @@ body {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: radial-gradient(ellipse, rgb(0, 0, 0) 10%, rgba(0, 0, 255, 0) 90%);
+    background: radial-gradient(ellipse, rgb(0, 0, 0) 10%, rgba(0, 0, 0, 0) 90%);
 }
 
-#container {
+#main {
     position: absolute;
     top: 0;
     left: 0;
