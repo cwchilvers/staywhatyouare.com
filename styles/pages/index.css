@@ -99,7 +99,6 @@ body {
     mix-blend-mode: color-dodge;
     pointer-events: none;
     opacity: 0.1;
-    pointer-events: none;
 }
 
 #crt-overlay {
@@ -112,6 +111,17 @@ body {
     mix-blend-mode: color-dodge;
     pointer-events: none;
     opacity: 0.1;
+}
+
+#globe-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    mix-blend-mode: difference;
+    pointer-events: none;
 }
 
 #logo {
@@ -132,7 +142,7 @@ body {
 }
 
 #enter:hover {
-    filter: blur(10px) drop-shadow(2px 2px 30px rgb(255, 255, 255));
+    transform: scale(2);
 }
 
 
