@@ -14,13 +14,31 @@
 
 <body>
     <div id="body-container">
+        <!-------------------- Header --------------------->
         <header>
-            <img src="./assets/images/logo.png" height="80px">
+            <img src="./assets/images/logo.png" class="color-shift" height="80px">
+            <img src="./assets/images/bg/header_02.png" height="80px">
         </header>
 
+        <!-------------------- Main Content --------------------->
+        <main>
+            <div id="welcome">
+                <img src="./assets/images/gif/earth.gif">
+                <img src="./assets/images/gif/welcome.gif">
+                <img src="./assets/images/gif/fish.gif">
+                <img src="./assets/images/gif/trex.gif">
+                <img src="./assets/images/gif/guitar.gif">
+                <img src="./assets/images/gif/ufo.gif" id="ufo">
+            </div>
+
+            <hr>
+
+        </main>
     </div>
 </body>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/gsap.min.js"></script>
+<script src="./scripts/colorShift.js"></script>
+<script src="./scripts/ufo.js"></script>
 
 </html>
