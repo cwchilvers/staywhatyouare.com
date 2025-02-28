@@ -129,3 +129,13 @@ table {
 *::after {
     box-sizing: border-box;
 }
+
+img {
+    -webkit-user-drag: none;
+    -moz-user-drag: none;
+}
+
+a,
+button {
+    -webkit-tap-highlight-color: transparent;
+}
