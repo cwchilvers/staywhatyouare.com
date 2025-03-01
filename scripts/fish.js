@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const object = document.querySelector('#fish');
     
-    const sound = new Audio('../assets/audio/fish/fish.wav');
+    const sound = new Audio('../assets/audio/fish.wav');
     let isPlaying = false;
 
     object.addEventListener('click', () => {
