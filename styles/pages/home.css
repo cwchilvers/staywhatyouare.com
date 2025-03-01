@@ -63,7 +63,7 @@ main {
     position: absolute;
     transform: translate(-500px, 80px);
     height: 120px;
-
+    cursor: pointer;
 }
 
 #welcome :nth-child(5) {

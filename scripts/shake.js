@@ -3,16 +3,16 @@ let shakeAnimation;
 
 object.addEventListener('mouseenter', () => {
     shakeAnimation = gsap.to(object, {
-        x: () => gsap.utils.random(-5, 5),
-        y: () => gsap.utils.random(-5, 5),
+        x: () => gsap.utils.random(-3, 3),
+        y: () => gsap.utils.random(-3, 3),
         repeat: -1, 
         yoyo: true, 
         duration: 0.01, 
         ease: "power1.inOut",
         onRepeat: () => {
             gsap.to(object, {
-                x: gsap.utils.random(-5, 5),
-                y: gsap.utils.random(-5, 5),
+                x: gsap.utils.random(-3, 3),
+                y: gsap.utils.random(-3, 3),
                 duration: 0.01
             });
         }
