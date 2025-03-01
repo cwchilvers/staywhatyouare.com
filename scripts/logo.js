@@ -1,11 +1,11 @@
 const object = document.querySelector('#logo');
 let shakeAnimation;
-let audio;
+let sound;
 
 object.addEventListener('mouseenter', () => {
-    audio = new Audio('/assets/audio/logo.wav'); 
-    audio.loop = true;
-    audio.play();
+    sound = new sound('/assets/audio/logo.wav'); 
+    sound.loop = true;
+    sound.play();
 
     shakeAnimation = gsap.to(object, {
         x: () => gsap.utils.random(-3, 3),
@@ -33,8 +33,8 @@ object.addEventListener('mouseleave', () => {
         ease: "power1.inOut"
     });
 
-    if (audio) {
-        audio.pause();
-        audio.currentTime = 0;
+    if (sound) {
+        sound.pause();
+        sound.currentTime = 0;
     }
 });

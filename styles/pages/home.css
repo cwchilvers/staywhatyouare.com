@@ -83,6 +83,7 @@ hr {
     color: white;
 }
 
-#logo {
+#logo,
+#fish {
     cursor: pointer;
 }
