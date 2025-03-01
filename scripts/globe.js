@@ -1,12 +1,4 @@
-gsap.to('#rotating', {
-    rotation: 360, 
-    repeat: -1,   
-    duration: 250,  
-    transformOrigin: "center", 
-    ease: "linear" 
-});
-
-const rotatingElement = document.getElementById('rotating');
+const globe = document.getElementById('globe');
 
 document.addEventListener('mousemove', (event) => {
     const mouseX = event.clientX;
@@ -18,9 +10,9 @@ document.addEventListener('mousemove', (event) => {
     const offsetX = (mouseX - windowWidth / 2) / windowWidth;
     const offsetY = (mouseY - windowHeight / 2) / windowHeight;
 
-    gsap.to(rotatingElement, {
-        x: -offsetX * 60,
-        y: -offsetY * 60,
+    gsap.to(globe, {
+        x: offsetX * 30,
+        y: offsetY * 30,
         duration: 0.3,
         ease: "power1.out"
     });
