@@ -3,12 +3,10 @@ let shakeAnimation;
 let audio;
 
 object.addEventListener('mouseenter', () => {
-    // Play sound in a loop
-    audio = new Audio('/assets/audio/logo.wav'); // Assuming the sound file is at this path
+    audio = new Audio('/assets/audio/logo.wav'); 
     audio.loop = true;
     audio.play();
 
-    // Start shake animation
     shakeAnimation = gsap.to(object, {
         x: () => gsap.utils.random(-3, 3),
         y: () => gsap.utils.random(-3, 3),
@@ -27,7 +25,6 @@ object.addEventListener('mouseenter', () => {
 });
 
 object.addEventListener('mouseleave', () => {
-    // Stop the shake animation and reset position
     shakeAnimation.kill();
     gsap.to(object, {
         x: 0,
@@ -36,9 +33,8 @@ object.addEventListener('mouseleave', () => {
         ease: "power1.inOut"
     });
 
-    // Stop the sound when the hover ends
     if (audio) {
         audio.pause();
-        audio.currentTime = 0; // Reset to the start of the sound
+        audio.currentTime = 0;
     }
 });
