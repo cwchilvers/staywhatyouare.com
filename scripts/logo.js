@@ -1,9 +1,8 @@
 const object = document.querySelector('#logo');
 let shakeAnimation;
-let sound;
 
 object.addEventListener('mouseenter', () => {
-    sound = new Audio('/assets/audio/logo.wav'); 
+    const sound = new Audio('/assets/audio/logo.wav'); 
     sound.loop = true;
     sound.play();
 
@@ -22,6 +21,9 @@ object.addEventListener('mouseenter', () => {
             });
         }
     });
+
+    // storing sound into the object
+    object._sound = sound;
 });
 
 object.addEventListener('mouseleave', () => {
@@ -33,8 +35,9 @@ object.addEventListener('mouseleave', () => {
         ease: "power1.inOut"
     });
 
-    if (sound) {
-        sound.pause();
-        sound.currentTime = 0;
+    if (object._sound) {
+        object._sound.pause();
+        object._sound.currentTime = 0;
+        object._sound = null; 
     }
 });
