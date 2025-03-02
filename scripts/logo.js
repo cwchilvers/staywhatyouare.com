@@ -2,7 +2,7 @@ const object = document.querySelector('#logo');
 let shakeAnimation;
 
 object.addEventListener('mouseenter', () => {
-    const sound = new Audio('/assets/audio/logo.wav'); 
+    const sound = new Audio('../assets/audio/logo.wav'); 
     sound.loop = true;
     sound.play();
 
