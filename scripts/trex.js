@@ -11,8 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
     object.addEventListener('click', () => {
         const randomSound = sounds[Math.floor(Math.random() * sounds.length)];
 
-        const sound = new sound(randomSound);
-        sound.play();
+        const audio = new Audio(randomSound);
+        audio.play();
 
         const currentX = parseFloat(window.getComputedStyle(object).transform.split(',')[4]) || 0;
         const currentY = parseFloat(window.getComputedStyle(object).transform.split(',')[5]) || 0;

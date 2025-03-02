@@ -3,7 +3,7 @@ let shakeAnimation;
 let sound;
 
 object.addEventListener('mouseenter', () => {
-    sound = new sound('/assets/audio/logo.wav'); 
+    sound = new Audio('/assets/audio/logo.wav'); 
     sound.loop = true;
     sound.play();
 
