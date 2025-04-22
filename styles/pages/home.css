@@ -52,6 +52,44 @@ hr {
     transform: scaleX(1.3);
 }
 
+
+/* -------------------- Navigation -------------------- */
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -35px;
+}
+
+nav a {
+    background-image: url('../../assets/images/nav.png');
+    width: 172px;
+    height: 35px;
+    padding-bottom: 10px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    z-index: 100;
+    color: rgb(246, 255, 0);
+    text-decoration: none;
+    font-size: large;
+}
+
+nav a:hover {
+    filter: brightness(1.4); /* Increase brightness on hover */
+}
+
+
+
+
+
+
+
 /* -------------------- Welcome -------------------- */
 #welcome {
     width: 100%;
@@ -110,11 +148,11 @@ hr {
     justify-content: center;
     flex-direction: column;
     background-size: contain;
+    background-repeat: no-repeat;
     background-image: url('../../assets/images/gif/lightning.gif');
 }
 
 #announcements .header :nth-child(2) {
     width: 500px;
     position: absolute;
-  
 }
