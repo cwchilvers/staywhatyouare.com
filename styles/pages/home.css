@@ -1,3 +1,4 @@
+/* -------------------- General Body & HTML Styles -------------------- */
 body {
     display: flex;
     justify-content: center;
@@ -6,30 +7,9 @@ body {
     background-position: center;
 }
 
-#body-container {
+#black-container {
     width: 720px;
     min-height: 100vh;
-}
-
-header {
-    height: 200px;
-    width: 100%;
-    background-color: #00FA04;
-    background-image: url('../../assets/images/bg/header_01.png');
-    background-position: center;
-    background-repeat: none;
-    background-size: cover;
-}
-
-header :nth-child(1) {
-    transform: scaleX(1.3);
-    z-index: 10;
-    box-shadow: 4px 12px 0px black;
-}
-
-header :nth-child(2) {
-    transform: scaleY(2) translate(500px, 30px);
-    z-index: 9;
 }
 
 main {
@@ -38,44 +18,7 @@ main {
     height: 100%;
     background-color: black;
     padding: 20px;
-}
-
-#welcome {
-    padding: 0px 20px 10px 20px;
-}
-
-#welcome :nth-child(1) {
-    transform: translate(60px, -30px);
-
-}
-
-#welcome :nth-child(2) {
-    transform: translate(-20px, -30px);
-}
-
-#welcome :nth-child(3) {
-    position: absolute;
-    transform: translate(70px, 40px);
-    height: 60px;
-}
-
-#welcome :nth-child(4) {
-    position: absolute;
-    transform: translate(-500px, 80px);
-    height: 120px;
-    cursor: pointer;
-}
-
-#welcome :nth-child(5) {
-    position: absolute;
-    transform: translate(-20px, 0px);
-    z-index: 1000;
-}
-
-#welcome :nth-child(6) {
-    position: absolute;
-    transform: translate(-600px, 0px);
-    width: 120px;
+    margin-top: -60px;
 }
 
 hr {
@@ -83,8 +26,90 @@ hr {
     color: white;
 }
 
+
+
+/* -------------------- Header -------------------- */
+#swirl-1 {
+    height: 200px;
+    background-size: cover;
+    background-image: url('../../assets/images/bg/swirl_1.png');
+}
+
+#swirl-2 {
+    transform: scaleY(2) translate(500px, -30px);
+}
+
+#logo {
+    position: absolute;
+    margin-left: -280px;
+    margin-top: -200px;
+    box-shadow: 4px 12px 0px black;
+    transform: scaleX(1.3);
+}
+
+/* -------------------- Welcome -------------------- */
+#welcome {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 20px;
+    background-image: url('../../assets/images/bg/welcome.jpg');
+}
+
+#welcome img {
+    position: absolute;
+}
+
 #logo,
 #fish,
+#trex,
 #ufo {
     cursor: pointer;
+}
+
+#earth {
+    transform: translate(-50px)
+}
+
+#welcome-sign {
+    transform: translate(100px, 70px)
+}
+
+#ufo {
+    width: 120px;
+}
+
+#guitar {
+    transform: translate(-10px, 30px)
+}
+
+#trex {
+    width: 180px;
+    transform: translate(400px, 100px)
+}
+
+#fish {
+    width: 180px;
+    transform: translate(500px, 10px)
+}
+
+
+
+
+
+
+#announcements .header {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-size: contain;
+    background-image: url('../../assets/images/gif/lightning.gif');
+}
+
+#announcements .header :nth-child(2) {
+    width: 500px;
+    position: absolute;
+  
 }
