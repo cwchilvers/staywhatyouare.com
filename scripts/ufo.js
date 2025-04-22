@@ -1,5 +1,5 @@
 gsap.to("#ufo", {
-    x: 0.2, 
+    x: 400, 
     rotation: 15, 
     duration: 2,
     repeat: -1,
