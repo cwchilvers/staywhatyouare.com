@@ -2,9 +2,10 @@
 body {
     display: flex;
     justify-content: center;
-    background-color: blue;
+    background-color: black;
     padding-top: 20px;
     background-position: center;
+    background-image: url('../../assets/images/bg/stars.gif');
 }
 
 #black-container {
