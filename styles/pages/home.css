@@ -8,9 +8,10 @@ body {
     background-image: url('../../assets/images/bg/stars.gif');
 }
 
-#black-container {
+#main-container {
     width: 720px;
     min-height: 100vh;
+
 }
 
 main {
@@ -20,6 +21,9 @@ main {
     background-color: black;
     padding: 20px;
     margin-top: -60px;
+    border-style: double;
+    border-color: blue;
+    border-width: 4px;
 }
 
 hr {
