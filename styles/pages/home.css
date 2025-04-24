@@ -6,12 +6,13 @@ body {
     padding-top: 20px;
     background-position: center;
     background-image: url('../../assets/images/bg/stars.gif');
+
 }
 
 #main-container {
     width: 720px;
     min-height: 100vh;
-
+    margin-bottom: 300px;
 }
 
 main {
@@ -24,6 +25,7 @@ main {
     border-style: double;
     border-color: blue;
     border-width: 4px;
+
 }
 
 #announcements hr {
@@ -55,7 +57,7 @@ main {
 
 
 /* -------------------- Navigation -------------------- */
-.nav {
+.nav, #music hr {
     transform: scaleX(1.1) scaleY(2.4);
     color: white;
 }
@@ -150,6 +152,9 @@ nav a:hover {
 
 
 /* -------------------- Announcements -------------------- */
+#announcements {
+    padding-bottom: 40px;
+}
 #announcements .header {
     width: 100%;
     height: 300px;
@@ -177,4 +182,23 @@ nav a:hover {
     font-size: 18px;
     padding: 10px 0;
     color: yellow;
+}
+
+
+
+/* -------------------- Music -------------------- */
+#music .header {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../../assets/images/gif/galaxy.gif');
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#music img {
+    padding: 20px;
 }
